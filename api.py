@@ -6,7 +6,7 @@ app.config['JSON_AS_ASCII'] = False
 @app.route('/')
 def index():
     info = {
-        "mensaje" : "Bienvenido a la API del curriculum vitae de Nahuel Tori.",
+        "mensaje" : "Bienvenido a la API del curriculum vitae de Marisol Castilla.",
         "acciones" : [
             "GET /curriculum",
             "POST /mensajes"
@@ -18,27 +18,27 @@ def index():
 def cv():
     url_imagen = request.host_url + "static/mifoto.png"
     cv = {
-        "nombre" : "Nahuel",
-        "apellido" : "Tori",
-        "residencia" : "Argentina",
+        "nombre" : "Marisol",
+        "apellido" : "Castilla",
+        "residencia" : "Colombia",
         "experiencia" : [{
-            "posicion" : "< describe tu posición>",
-            "empresa" : "< nombre de tu empresa >",
+            "posicion" : "< Ingeniero desarrollador>",
+            "empresa" : "< Tracker de Colombia >",
             "desde" : "< cuándo empezaste a trabajar >",
             "hasta" : "< si ya no trabajas más, cuándo >",
             "descripcion" : "< detalles >"
         }],
         "educación" : {
-            "nivel" : "< nivel de tus estudios >",
-            "titulo" : "< nombre de tu carrera >",
-            "institucion" : "< dónde estudiaste >",
+            "nivel" : "< Profesional >",
+            "titulo" : "< Ingeniero de Sitemas >",
+            "institucion" : "< Fundacion Universitaria Tecnologico comfenalco >",
             "facultad" : "< más detalles >"
         },
-        "intereses" : ["python", "apis", "enseñar"],
+        "intereses" : ["python", "apis", "Deportes: Ciclismo"],
         "redes" : {
-            "github" : "https://github.com/nahueltori",
-            "twitter" : "https://twitter.com/nahueltori",
-            "linkedin" : "https://www.linkedin.com/in/nahueltori"
+            "github" : "https://github.com/mcastillaz",
+            "facebook" : "https://www.facebook.com/marisol.castillazambrano",
+            "linkedin" : "https://www.linkedin.com/in/marisol-castilla-zambrano"
         },
         "foto" : url_imagen
     }
